@@ -7,7 +7,8 @@
             var defaults = {
                 top: 100,
                 overlay: 0.5,
-                closeButton: null
+                closeButton: null,
+		focusId: null
             }
             
             var overlay = $("<div id='lean_overlay'></div>");
@@ -52,7 +53,7 @@
         		});
 
         		$(modal_id).fadeTo(200,1);
-
+			$(o.focusId).focus();
                 e.preventDefault();
                 		
               	});
